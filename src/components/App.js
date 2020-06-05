@@ -26,6 +26,8 @@ class App extends React.Component {
       <div className="App">
         <h1>ravenous</h1>
         <SearchBar searchYelp={this.searchYelp}/>
+        {/* don't call `state when it's an internal method!!` */}
+
         <BusinessList businesses={this.state.businesses}/>
       </div>
     );
